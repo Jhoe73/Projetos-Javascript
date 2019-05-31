@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <style>
+  table {
+    width: 100%;
+  }
+  .tictac
+  {
+    background:#ffffff;
+    border:#999 10px solid;
+    width:100%;
+    height:33%;
+    font-size:7em;
+  }
+  .btn {
+    background:#434a5d;
+    margin: 5%;
+    padding: 2%;
+    font-size:1.7em;
+    align-items: center;
+    color: #ffffff;
+  }
+  .modoDeJogo{
+    text-align: center;
+    align-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  button {
+    margin: 2%;
+  }
+  .spanModo {
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="modoDeJogo">
+      <button type="button" name="singlePlayer" class="btn single">Single Player</button>
+      <button type="button" name="multiplayer" class="btn mult">Multiplayer</button>
+    </div>
+    <div class="spanModo">
+      <span>Modo: Single Player</span>
+    </div>
+  </nav>
+  <main>
+    <table>
+      <tr>
+        <td><input type="button" id="sqr0" name="sqr0" class="tictac" onClick="squareClick('sqr0')" /></td>
+        <td><input type="button" id="sqr1" name="sqr1" class="tictac" onClick="squareClick('sqr1')" /></td>
+        <td><input type="button" id="sqr2" name="sqr2" class="tictac" onClick="squareClick('sqr2')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="sqr3" name="sqr3" class="tictac" onClick="squareClick('sqr3')" /></td>
+        <td><input type="button" id="sqr4" name="sqr4" class="tictac" onClick="squareClick('sqr4')" /></td>
+        <td><input type="button" id="sqr5" name="sqr5" class="tictac" onClick="squareClick('sqr5')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="sqr6" name="sqr6" class="tictac" onClick="squareClick('sqr6')" /></td>
+        <td><input type="button" id="sqr7" name="sqr7" class="tictac" onClick="squareClick('sqr7')" /></td>
+        <td><input type="button" id="sqr8" name="sqr8" class="tictac" onClick="squareClick('sqr8')" /></td>
+      </tr>
+    </table>
+    <div class="modoDeJogo">
+      <button type="button" name="again" class="btn" onClick="playAgain()">Recomeçar</button>
+    </div>
+  </main>
+
+  <script src="js/modo.js"></script>
+  <script src="js/singlePlayer.js"></script>
+  <script src="js/multiplayer.js"></script>
+  <script src="js/combinations.js"></script>
+  <script src="js/gameFunctions.js"></script>
+
+</body>
+</html>
