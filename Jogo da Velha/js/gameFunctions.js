@@ -97,4 +97,7 @@ function playAgain() { //função usada para zerar as variáveis e possibilitar 
     gameOver = false;
     //voltar com o valor false para a variável hasWin
     hasWin = false;
+     //variável para identificar o jogador, sendo X ou O
+    player = 'X';
+
 }
